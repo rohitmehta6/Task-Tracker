@@ -1,0 +1,100 @@
+.cardinfo {
+    padding: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+}
+
+.cardinfo-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardinfo-box-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardinfo-box-body {
+    width: fit-content;
+}
+
+.cardinfo-box-body input {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.cardinfo-box-colors {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.cardinfo-box-colors li {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    list-style: none;
+    border: 3px solid transparent;
+    transition: 200ms;
+}
+
+.cardinfo-box-colors .active {
+    border: 3px solid yellow;
+}
+
+.cardinfo-box-progress-bar {
+    height: 10px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.cardinfo-box-progress {
+    height: 10px;
+    border-radius: 20px;
+    background-color: #1379ec;
+}
+
+.cardinfo-box-progress .active {
+    background-color: limegreen;
+}
+
+.cardinfo-box-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardinfo-task {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    gap: 10px;
+}
+
+.cardinfo-task p {
+    flex: 1;
+    line-height: 20px;
+}
+
+.cardinfo-task input, .cardinfo-task svg {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.cardinfo-box-labels {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
