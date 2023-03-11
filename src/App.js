@@ -8,11 +8,11 @@ import './App.css';
 function App() {
 
   const [target, setTarget] = useState({ cardId: "", boardId: "" })
-  const [boards, setBoards] = useState(JSON.parse(localStorage.getItem('task-tracker'))|| [])
+  const [boards, setBoards] = useState(JSON.parse(localStorage.getItem('task-tracker')) || [])
 
-  useEffect(()=>{
+  useEffect(() => {
     localStorage.setItem('task-tracker', JSON.stringify(boards))
-  },[boards])
+  }, [boards])
 
   const addCard = (title, boardId) => {
     const card = {
